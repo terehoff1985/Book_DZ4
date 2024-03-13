@@ -1,4 +1,5 @@
 package DZ_4;
+//Сделал класс LibraryCard взаимозаменяемым со своим базовым классом Object.
 
 public class LibraryCard<K, V> {
 

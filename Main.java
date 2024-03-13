@@ -2,11 +2,12 @@ package DZ_4;
 
 public class Main {
 
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
-        Library library = new Library();
+        Library<Book> library = new Library<>();
 
-        Book<String> book1 = new Book<>("Война и мир");
-        Book<String> book2 = new Book<>("Преступление и наказание");
+        Book book1 = new Book("Война и мир");
+        Book book2 = new Book("Преступление и наказание");
 
         LibraryCard<Integer, String> card1 = new LibraryCard<>(12345, "Студент 1");
         LibraryCard<Integer, String> card2 = new LibraryCard<>(23456, "Студент 2");

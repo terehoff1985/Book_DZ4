@@ -1,15 +1,17 @@
 package DZ_4;
+//Разделил класс Book на два класса: Book и Library.
 
 public class Book<T> {
 
-    private T title;
+    private String title;
 
-    public Book(T title) {
+    public Book(String title) {
         this.title = title;
     }
 
-    public T getTitle() {
+    public String getTitle() {
         return title;
     }
+
 
 }
